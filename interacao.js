@@ -13,14 +13,12 @@ const formatador = (data) => {
     }
   }
   
-  // object {}
   const atividade = {
     nome: "Almoço",
     data: new Date("2024-02-01 12:00"),
     finalizada: true
   }
   
-  // lista, array, vetor [a, b, c]
   let atividades = [
     atividade,
     {
@@ -35,12 +33,8 @@ const formatador = (data) => {
     },
   ]
   
-  //atividades = []
-  
-  // arrow function
   const criarItemDeAtividade = (atividade) => {
    
-    // crio uma vatiável que pode mudar a qualquer momento 
     let input = `
     <input
     onchange="concluirAtividade(event)"
@@ -99,7 +93,7 @@ const formatador = (data) => {
       section.innerHTML = `<p>Nenhuma atividade cadastrada.</p>`
       return
     }
-    // sempre que utilizar o "for" é melhor desativar o "live reload" para não ficar em um looping infinito
+
     for(let atividade of atividades) {
       section.innerHTML +=  criarItemDeAtividade(atividade)
     }
@@ -118,9 +112,7 @@ const formatador = (data) => {
     const data = `${dia} ${hora}` 
   
     const novaAtividade = {
-      // é a mesma coisa que "nome: nome,"
       nome, 
-      // é a mesma coisa que "data: data,"
       data,
       finalizada: false
     }
@@ -133,7 +125,6 @@ const formatador = (data) => {
       return alert('Dia/Hora não disponível')
     }
   
-    // "..." quer dizer que estou colocando as atividades antigas na lista
     atividades = [novaAtividade, ...atividades]
     atualizarListaDeAtividades() 
   } 
@@ -197,6 +188,5 @@ const formatador = (data) => {
       return
     }
   
-    // "!" significa o inverso
     atividade.finalizada = !atividade.finalizada
   }

@@ -1,8 +1,6 @@
-/* o "*" vai funcionar para tudo que tem na página HTML*/
 * {
     margin: 0;
     padding: 0;
-    /* tamanho da caixa */
     box-sizing: border-box;
   }
   
@@ -13,8 +11,6 @@
     letter-spacing: -0.02em;
   }
   
-  /* app */ 
-  /* identificador de id */
   #app {
     padding: 40px 20px;
     max-width: 320px;
@@ -27,7 +23,6 @@
   #place {
     display: flex;
     align-items: center;
-    /* espaço entre o ícone e o texto */
     gap: 8px;
   
     padding: 22px 16px;
@@ -68,15 +63,10 @@
   button {
     margin-top: 12px;
     border: none;
-    /* 12px em cima e embaixo e 20px nas laterais */
     padding: 12px 20px;
     background-color: #aff445;
-    /* arredondamento de bordas */
     border-radius: 8px;
-  
-    /* configurações de fontes */
     font-weight: 500;
-    /* tamanho da fonte */
     font-size: 16px;
   
     color: #132F00
@@ -99,7 +89,6 @@
   
   }
   
-  /* main */
   main {
     margin-top: 32px;
   }
@@ -189,12 +178,11 @@
   section.card-bg {
     animation: appear 300ms;
   }
-  /* Bigão */
+
   .btn {
     margin-bottom: 20px;
   }
   
-  /* Bigão */
   svg {
     width: 30px !important;
   }
